@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open("README.md", "r", encoding="utf8", errors='ignore') as fh:
     long_description = fh.read()
@@ -10,7 +10,7 @@ setup(name='cosbo',
       author='Lucas F. Santos',
       author_email='lfs.francisco.95@gmal.com',
       license='MIT',
-      packages=['cosbo'],
+      packages=find_packages(),#['cosbo', 'cosbo/optimization_problems'],
       install_requires=['numpy',
                         'scikit-learn',
                         'matplotlib',

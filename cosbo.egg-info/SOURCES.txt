@@ -1,8 +1,0 @@
-README.md
-setup.py
-cosbo/main.py
-cosbo.egg-info/PKG-INFO
-cosbo.egg-info/SOURCES.txt
-cosbo.egg-info/dependency_links.txt
-cosbo.egg-info/requires.txt
-cosbo.egg-info/top_level.txt
