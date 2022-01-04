@@ -69,7 +69,7 @@ def main():
 def main2():
     smr1 = SMR_optProblem()
     x0 = np.array( [0.25/3600, 0.70/3600, 1.0/3600, 1.10/3600, 1.80/3600, 2.50e5, 50.00e5, -60+273.15] )*smr1.reg
-    print(smr1.eval(0.75*x0))
+    print(smr1.eval(1.0*x0))
 
 if __name__ == "__main__":
-    main()
+    main2()

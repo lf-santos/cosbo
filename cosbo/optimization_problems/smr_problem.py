@@ -6,10 +6,10 @@ from pathlib import Path
 import sys
 from dwsimopt.sim_opt import SimulationOptimization
 
-from optimization_problems.optimization_problems import OptProblem
+from cosbo.utils import PATH2COSBO
 
 # Define SimulationOptimization object and Automation2() instance in this scope to avoid problems
-dir_path = str(Path(os.getcwd()).parent.absolute())
+dir_path = PATH2COSBO #str(Path(os.getcwd()).parent.absolute())
 # Getting DWSIM path from system path
 for k,v in enumerate(os.environ['path'].split(';')):
     if v.find('\DWSIM')>-1:
@@ -31,6 +31,7 @@ sim_smr.connect(interf)
 from pySOT.optimization_problems import OptimizationProblem
 class SMR_optProblem(OptimizationProblem):
 
+# from optimization_problems.optimization_problems import OptProblem
 # class SMR_optProblem(OptProblem):
     
     def __init__(self):
